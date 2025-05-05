@@ -288,3 +288,20 @@ Console.log(regexp2->RegExp.unicode) // Logs `true`, since `u` is set
 */
 @get
 external unicode: t => bool = "unicode"
+
+/**
+`flags(regexp)` returns a string consisting of the flags of this `RegExp`.
+
+See [`RegExp.flags`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/flags) on MDN.
+
+## Examples
+```rescript
+let regexp1 = RegExp.fromStringWithFlags("\\w+", ~flags="gi")
+Console.log(regexp1->RegExp.flags) // Logs `"gi"`, the flags of the RegExp
+
+let regexp2 = RegExp.fromStringWithFlags("\\w+", ~flags="myu")
+Console.log(regexp2->RegExp.flags) // Logs `"muy"`, the flags sorted alphabetically
+```
+*/
+@get
+external flags: t => string = "flags"

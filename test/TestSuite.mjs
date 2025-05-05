@@ -9,6 +9,7 @@ import * as ErrorTests from "./ErrorTests.mjs";
 import * as FloatTests from "./FloatTests.mjs";
 import * as ObjectTests from "./ObjectTests.mjs";
 import * as PromiseTest from "./PromiseTest.mjs";
+import * as RegExpTests from "./RegExpTests.mjs";
 import * as ResultTests from "./ResultTests.mjs";
 import * as IteratorTests from "./IteratorTests.mjs";
 import * as NullableTests from "./NullableTests.mjs";
@@ -72,8 +73,6 @@ var decodeJsonTest = JsonTests.decodeJsonTest;
 
 var shouldHandleNullableValues = NullableTests.shouldHandleNullableValues;
 
-var eq = IteratorTests.eq;
-
 var iterator = IteratorTests.iterator;
 
 var syncResult = IteratorTests.syncResult;
@@ -81,6 +80,8 @@ var syncResult = IteratorTests.syncResult;
 var asyncResult = IteratorTests.asyncResult;
 
 var asyncIterator = IteratorTests.asyncIterator;
+
+var eq = RegExpTests.eq;
 
 export {
   bign ,
@@ -112,10 +113,10 @@ export {
   o ,
   decodeJsonTest ,
   shouldHandleNullableValues ,
-  eq ,
   iterator ,
   syncResult ,
   asyncResult ,
   asyncIterator ,
+  eq ,
 }
 /* IntTests Not a pure module */

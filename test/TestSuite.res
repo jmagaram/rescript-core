@@ -11,3 +11,4 @@ include JsonTests
 include NullableTests
 include DictTests
 include IteratorTests
+include RegExpTests
